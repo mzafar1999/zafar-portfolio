@@ -17,6 +17,7 @@
         "bootstrap-toggle": "^2.2.2",
         "dotenv": "^10.0.0",
         "express": "^4.17.2",
+        "favicon": "0.0.2",
         "firebase": "^9.6.1",
         "framer-motion": "^1.11.1",
         "nodemailer": "^6.7.2",
@@ -30,11 +31,11 @@
         "react-router-dom": "^6.2.1",
         "react-scripts": "5.0.0",
         "react-scroll": "^1.8.4",
+        "serve-favicon": "^2.5.0",
         "styled-components": "^5.3.3",
         "web-vitals": "^2.1.2"
     },
     "scripts": {
-
         "dev": "react-scripts start",
         "start": "serve -s build",
         "build": "react-scripts build",

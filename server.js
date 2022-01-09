@@ -3,8 +3,12 @@ const express = require('express');
 const nodemailer = require('nodemailer')
 const app = express();
 const path = require('path')
-app.use(bodyParser.json())
+const favicon = require("serve-favicon");
+require("dotenv").config();
 
+app.use(bodyParser.json())
+app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
+app.use(express.static(path.join(__dirname, "build")));
 
 
 if (process.env.NODE_ENV === 'production') {
