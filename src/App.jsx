@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import HomeScreen from "./Screen/HomeScreen";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { ThemeContext, ThemeProvider } from "./context/theme";
+import { ThemeContext } from "./context/theme";
 import { useContext } from "react";
 function App() {
   const context = useContext(ThemeContext);
