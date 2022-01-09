@@ -65,7 +65,7 @@ const About = () => {
               programming. He has been learning MERN stack technologies and has developed some MERN stack applications. More than being web developer, he has good UI and graphic designing skills as he created logos, banner designs for business and commercial cards. <br/>
               Skills:<br/>
               </p>
-              <ul className="text-left-style">
+              <ul className="text-left-style align-list">
                   <li>Front-end: HTML,CSS,Javascript,Bootstrap,Jquery and ReactJS</li>
                   <li>Backend: Node.js, Express</li>
                   <li>Database: Mysql, MongoDB</li>
