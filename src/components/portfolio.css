@@ -1,0 +1,23 @@
+.portfolio {
+    background: linear-gradient(90deg, rgba(7, 28, 40, 1) 0%, rgba(9, 45, 121, 1) 24%, rgba(0, 212, 255, 1) 100%);
+    border: 1px solid white;
+    /* border-radius: 25px !important; */
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.card-style {
+    border: 1px solid white;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    margin: 100px;
+}
+
+.card-style img {
+    border: 1px solid white;
+    border-top-right-radius: 24px;
+}
+
+.large-card img {
+    width: 100%;
+}
