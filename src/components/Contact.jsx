@@ -76,7 +76,7 @@ const Contact = () => {
         initial="hidden"
         animate={controls}
       >
-        <h1 className="my-5">Contact Us</h1>
+        <h1 className="my-5">Contact</h1>
         <motion.div variants={contentVarient} className="row contact my-5">
           <div className="col-md-6">
             <div className="d-flex my-3">

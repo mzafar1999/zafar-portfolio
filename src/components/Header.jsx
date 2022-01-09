@@ -41,6 +41,7 @@ const Header = () => {
         </InfoContainer>
         <ImageContainer className="image col-md-6 ">
           <motion.img
+           
             variants={imageVariants}
             initial="hidden"
             animate="visible"

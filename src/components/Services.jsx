@@ -109,16 +109,12 @@ const Services = () => {
               icon="/images/back-end-icon.png"
               projects="10 Projects"
               title="Backend Development"
-              // desc="I will develop your front-end using HTML,CSS and Javascript or ReactJS"
-
               desc="Node.js is the tech that I am using for backend and will create RESTFul Api."
             />
           </motion.div>
           <motion.div
             variants={leftCardVarients1}
-            // initial="hidden"
-            // animate={controls2}
-            // ref={ref3}
+      
             className="col-xl-4 col-lg-6"
           >
             <Card

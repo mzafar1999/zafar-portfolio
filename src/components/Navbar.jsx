@@ -34,7 +34,7 @@ const Navbar = () => {
         "
       >
         <div className="d-flex justify-content-between ">
-          <img src={isDark?"/images/zafar-logo.svg":"/images/zafar-logo-white.svg"} alt="logo" className="logo" />
+          <img src={isDark?"/images/zafar-logo.png":"/images/zafar-logo-white.png"} alt="logo" className="logo" />
         </div>
         <div className="burger">
         <a
