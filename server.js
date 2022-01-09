@@ -3,8 +3,9 @@ const express = require('express');
 const nodemailer = require('nodemailer')
 const app = express();
 const path = require('path')
-const port = process.env.PORT || 4000
 app.use(bodyParser.json())
+
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('build'));
@@ -41,6 +42,6 @@ app.post('/contact', (req, res) => {
 
 
 
-app.listen(port, function() {
+app.listen(process.env.PORT || 5000, function() {
     console.log('app is listening on port 4000');
 })
