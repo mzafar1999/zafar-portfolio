@@ -66,7 +66,7 @@ const About = () => {
               Skills:<br/>
               </p>
               <ul className="text-left-style align-list">
-                  <li>Front-end: HTML,CSS,Javascript,Bootstrap,Jquery and ReactJS</li>
+                  <li>Front-end: HTML,CSS,Bootstrap and ReactJS</li>
                   <li>Backend: Node.js, Express</li>
                   <li>Database: Mysql, MongoDB</li>
                   <li>Graphic Design: Adobe Photoshop, Adobe illustrator and Figma</li>
