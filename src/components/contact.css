@@ -37,7 +37,7 @@
     width: 50%;
 }
 
-.btn-submit {
+.btn-submit input {
     color: #fff;
     background-color: var(--light-blue);
     outline: none;

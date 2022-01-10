@@ -16,17 +16,7 @@ app.all('/*', function(req, res, next) {
 });
 
 app.use(bodyParser.json())
-$.ajax({
-    url: 'zafar-portfolio.herokuapp.com',
-    type: 'POST',
-    headers: { 'Accept': 'application/json;' },
-    data: {
-        "subject": "subject",
-        "message": "some body text"
-    },
-}).done(function(res) {
-    console.log(res); // it shows your email sent message.
-});
+
 app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
 app.use(express.static(path.join(__dirname, "build")));
 app.use(express.static(path.join(__dirname, 'build')));

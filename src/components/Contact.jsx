@@ -9,6 +9,7 @@ import "./social.css";
 import "./contact.css";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import emailjs from 'emailjs-com';
 import axios from "axios";
 const headerVarient = {
   hidden: {
@@ -51,20 +52,23 @@ const Contact = () => {
 
   const formHandler = async (e) => {
     e.preventDefault();
-    if (name && email && message) {
-      try {
-        await axios.post("https://zafar-portfolio.herokuapp.com/contact", { name, email, message });
-        alert("messege send successfully!");
-        setName('')
-        setEmail('')
-        setMessage('')
+   
+      emailjs.sendForm('service_c0pyehj','template_elqyklf',e.target,'user_FUA1d1n8uh0cW1d5g0M2F').then(res=>{
+        console.log(res);
+      }).catch(err=>{
+        console.log(err);
+      })
+      // try {
+      //   await axios.post("/contact", { name, email, message });
+      //   alert("messege send successfully!");
+      //   setName('')
+      //   setEmail('')
+      //   setMessage('')
 
-      } catch (error) {
-        alert(error);
-      }
-    } else {
-      alert("Please provide all details");
-    }
+      // } catch (error) {
+      //   alert(error);
+      // }
+   
   };
 
   return (
@@ -120,50 +124,39 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-md-6 send-message">
-            <form action="">
+            <form onSubmit={formHandler}>
               <div>
                 <input
                   type="text"
-                  value={name}
-                  onChange={(e) => {
-                    setName(e.target.value);
-                  }}
+                  name='name'
+                 
                   placeholder="Full Name"
                 />
               </div>
               <div>
                 <input
                   type="email"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
+                  name='email'
+                 
                   placeholder="Email"
                 />
               </div>
               <div>
                 <input
                   type="text"
-                  value={message}
-                  onChange={(e) => {
-                    setMessage(e.target.value);
-                  }}
+                  name='message'
+               
                   placeholder="Message"
                   className="message"
                 />
               </div>
-              <div>
-                <motion.button
-                  variants={btnVariant}
-                  whileHover="whileHover"
-                  className="btn-submit"
-                  type="submit"
-                  value="Send"
-                  onClick={formHandler}
+              <div className="btn-submit">
+                <input                 
                   
-                >
-                  Send
-                </motion.button>
+                  type="submit"
+                  value="Send"                  
+               / >
+                 
               </div>
             </form>
           </div>
