@@ -30,12 +30,7 @@ const contentVarient = {
   },
 };
 
-const btnVariant = {
-  whileHover: {
-    scale: 1.1,
-    boxShadow: "0px 0px 8px rgb(16, 185, 228, 0.76) ",
-  },
-};
+
 const Contact = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -56,7 +51,6 @@ const Contact = () => {
         alert('Something went wrong!')
         document.getElementById("contact-form").reset();
       }
-   
   };
 
   return (
@@ -81,7 +75,7 @@ const Contact = () => {
               </div>
               <div className="mx-4">
                 <h3>Address</h3>
-                <p>Phase-1 Hayatabad, Peshawar, Pakistan.</p>
+                <p>Hayatabad, Peshawar, Pakistan.</p>
               </div>
             </div>
             <div className="d-flex my-2">
