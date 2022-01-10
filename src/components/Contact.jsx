@@ -53,7 +53,7 @@ const Contact = () => {
     e.preventDefault();
     if (name && email && message) {
       try {
-        await axios.post("/contact", { name, email, message });
+        await axios.post("https://zafar-portfolio.herokuapp.com/contact", { name, email, message });
         alert("messege send successfully!");
         setName('')
         setEmail('')

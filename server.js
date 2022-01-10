@@ -4,7 +4,16 @@ const nodemailer = require('nodemailer')
 const app = express();
 const path = require('path')
 const favicon = require("serve-favicon");
+var cors = require('cors')
+app.use(cors({ credentials: true, origin: true }))
+
 require("dotenv").config();
+
+app.all('/*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+});
 
 app.use(bodyParser.json())
 app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
@@ -12,11 +21,6 @@ app.use(express.static(path.join(__dirname, "build")));
 
 
 app.use(express.static(path.join(__dirname, 'build')));
-
-
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 
 app.post('/contact', (req, res) => {
@@ -44,6 +48,11 @@ app.post('/contact', (req, res) => {
         }
     });
 })
+
+
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 
 
