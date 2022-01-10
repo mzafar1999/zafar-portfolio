@@ -4,13 +4,12 @@ import {
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./social.css";
 import "./contact.css";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import emailjs from 'emailjs-com';
-import axios from "axios";
 const headerVarient = {
   hidden: {
     y: 300,
@@ -46,33 +45,22 @@ const Contact = () => {
     }
   }, [controls, inView]);
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
   const formHandler = async (e) => {
     e.preventDefault();
    
-      emailjs.sendForm('service_c0pyehj','template_elqyklf',e.target,'user_FUA1d1n8uh0cW1d5g0M2F').then(res=>{
-        console.log(res);
-      }).catch(err=>{
-        console.log(err);
-      })
-      // try {
-      //   await axios.post("/contact", { name, email, message });
-      //   alert("messege send successfully!");
-      //   setName('')
-      //   setEmail('')
-      //   setMessage('')
-
-      // } catch (error) {
-      //   alert(error);
-      // }
+      try {
+        await emailjs.sendForm('service_c0pyehj','template_elqyklf',e.target,'user_FUA1d1n8uh0cW1d5g0M2F')
+        alert('Message sent successfully!')
+        document.getElementById("contact-form").reset();
+      } catch (error) {
+        alert('Something went wrong!')
+        document.getElementById("contact-form").reset();
+      }
    
   };
 
   return (
-    <div id="contact" className="container input-container ">
+    <div id="contact" className="container input-container">
       <motion.div
         className="row"
         variants={headerVarient}
@@ -124,7 +112,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-md-6 send-message">
-            <form onSubmit={formHandler}>
+            <form onSubmit={formHandler} id='contact-form'>
               <div>
                 <input
                   type="text"
@@ -151,8 +139,7 @@ const Contact = () => {
                 />
               </div>
               <div className="btn-submit">
-                <input                 
-                  
+                <input                   
                   type="submit"
                   value="Send"                  
                / >
