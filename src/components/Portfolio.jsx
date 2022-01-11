@@ -79,7 +79,7 @@ const Portfolio = () => {
           <PorfolioCard
             image="images/dell-clone-sc.png"
             title_link="Dell Clone"
-            desc="Created only with CSS HTML and Javascript!"
+            desc="Created only with CSS HTML and Javascript."
             to="https://dellclone.000webhostapp.com/"
             size="large"
           />
@@ -88,7 +88,7 @@ const Portfolio = () => {
           <PorfolioCard
             image="images/to-do.png"
             title_link="To Do App"
-            desc="Created with Javafx library and Mysql database!"
+            desc="Created with Javafx library and MySql database."
             size="large"
             to='https://www.youtube.com/watch?v=mznXBz6DFiU'
           />
@@ -97,7 +97,7 @@ const Portfolio = () => {
             <PorfolioCard
               image="images/ytd.png"
               title_link="Youtube Downloader"
-              desc="Created with ReactJS and loader.to API!"
+              desc="Created with ReactJS and loader.to API."
               size="large"
               to='https://loaderto-youtube-downloader.herokuapp.com'
             />
@@ -106,7 +106,7 @@ const Portfolio = () => {
             <PorfolioCard
               image="images/e-app.png"
               title_link="MERN E-Commerce App"
-              desc="Created with MERN Stack technologies..."
+              desc="Being Created with MERN Stack technologies..."
               size="large"
               under_dev={true}
             />

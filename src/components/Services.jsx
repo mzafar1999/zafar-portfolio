@@ -93,21 +93,19 @@ const Services = () => {
           >
             <Card
               icon="/images/front-end-icon.png"
-              projects="3 Projects"
+              projects="4 Projects"
               title="Front End Development"
               desc="I will develop your front-end using HTML,CSS and Javascript or ReactJS"
             />
           </motion.div>
           <motion.div
             variants={leftCardVarients2}
-            // initial="hidden"
-            // animate={controls1}
-            // ref={ref2}
+           
             className="col-xl-4 col-lg-6"
           >
             <Card
               icon="/images/back-end-icon.png"
-              projects="10 Projects"
+              projects="4 Projects"
               title="Backend Development"
               desc="Node.js is the tech that I am using for backend and will create RESTFul Api."
             />
@@ -119,7 +117,7 @@ const Services = () => {
           >
             <Card
               icon="/images/ui-icon.png"
-              projects="15 Projects"
+              projects="6 Projects"
               title="UI Designing"
               desc="I do graphic designing stuff using Adobe Photoshop, illustrator & Figma for web."
             />
