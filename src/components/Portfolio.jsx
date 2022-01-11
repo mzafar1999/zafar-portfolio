@@ -95,10 +95,11 @@ const Portfolio = () => {
         </motion.div>
         <motion.div variants={scaleCardVarients} animate={control3} ref={ref3} className="col-xl-3 col-lg-6">
             <PorfolioCard
-              image="images/dell-clone-sc.png"
-              title_link="Dell Clone"
-              desc="Created Purely with CSS HTML and Javascript!"
+              image="images/ytd.png"
+              title_link="Youtube Downloader"
+              desc="Created with ReactJS and loader.to API!"
               size="large"
+              to='https://loaderto-youtube-downloader.herokuapp.com'
             />
           </motion.div>
           <motion.div variants={scaleCardVarients} animate={control4} ref={ref4} className="col-xl-3 col-lg-6">
