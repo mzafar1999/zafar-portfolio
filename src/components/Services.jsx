@@ -47,8 +47,8 @@ const Services = () => {
   const controls2 = useAnimation();
 
   const [ ref, inView ] = useInView();
-  const [ ref2, inView2 ] = useInView();
-  const [ ref3, inView3 ] = useInView();
+  const [  inView2 ] = useInView();
+  const [  inView3 ] = useInView();
 
   useEffect(() => {
     if (inView) {

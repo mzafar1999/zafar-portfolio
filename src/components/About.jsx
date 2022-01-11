@@ -45,7 +45,7 @@ const About = () => {
         ref={ref}
         initial="hidden"
         animate={controls}
-        className="row d-flex justify-content-arround  h-50 align-items-center shadow p-3 mb-5  rounded"
+        className="row d-flex justify-content-arround  h-50 align-items-center  p-3 mb-5 "
       >
         <h1>About Me</h1>
         <div className="about-image col-md-6">

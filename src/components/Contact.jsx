@@ -4,13 +4,15 @@ import {
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "./social.css";
 import "./contact.css";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import emailjs from 'emailjs-com';
+import { ThemeContext } from "../context/theme";
 const headerVarient = {
+  
   hidden: {
     y: 300,
   },
@@ -40,6 +42,8 @@ const Contact = () => {
     }
   }, [controls, inView]);
 
+  const context = useContext(ThemeContext);
+  const [{ theme }] = context;
   const formHandler = async (e) => {
     e.preventDefault();
    
@@ -106,12 +110,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-md-6 send-message">
-            <form onSubmit={formHandler} id='contact-form'>
+            <form onSubmit={formHandler} id='contact-form' >
               <div>
                 <input
                   type="text"
                   name='name'
-                 
+                  style={{background:theme.backgroundColor,color:theme.color}}
                   placeholder="Full Name"
                 />
               </div>
@@ -119,7 +123,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name='email'
-                 
+                  style={{background:theme.backgroundColor,color:theme.color}}
                   placeholder="Email"
                 />
               </div>
@@ -127,7 +131,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name='message'
-               
+                  style={{background:theme.backgroundColor,color:theme.color}}
                   placeholder="Message"
                   className="message"
                 />

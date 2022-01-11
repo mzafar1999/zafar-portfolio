@@ -18,7 +18,7 @@ const PorfolioCard = ({ image, title_link, desc,to,size,under_dev }) => {
       <div className="card-body">
         <h5 className="card-title"> {title_link} </h5>
         <p className="card-text">{desc}</p>
-        <a href={to} target='_blank' className="btn btn-primary">
+        <a href={to} target='_blank' className={under_dev?'btn btn-secondary disabled':'btn btn-primary'} role="button" >
           {under_dev?'Under Development':'View Project'}
         </a>
       </div>

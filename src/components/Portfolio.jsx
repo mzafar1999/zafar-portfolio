@@ -1,8 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
-import React, { useContext } from "react";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { ThemeContext } from "../context/theme";
 import PorfolioCard from "./PorfolioCard";
 import "./portfolio.css";
 

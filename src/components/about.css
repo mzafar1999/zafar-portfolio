@@ -1,6 +1,11 @@
 .light-shadow-about {
     -webkit-box-shadow: 0px 1px 15px 1px rgba(35, 215, 221, 0.76);
     box-shadow: 0px 1px 8px 1px rgba(16, 185, 228, 0.76);
+    border-radius: 150px;
+}
+
+#about {
+    border-radius: 24px;
 }
 
 .text-left-style {
