@@ -25,11 +25,13 @@ const Portfolio = () => {
   const control2 = useAnimation();
   const control3 = useAnimation();
   const control4 = useAnimation();
+  const control5 = useAnimation();
 
   const [ref1,inView1] = useInView();
   const [ref2,inView2] = useInView();
   const [ref3,inView3] = useInView();
   const [ref4,inView4] = useInView();
+  const [ref5,inView5] = useInView();
   
   useEffect(() => {
     if(inView1){
@@ -68,6 +70,15 @@ const Portfolio = () => {
     }
   }, [control4,inView4])
 
+  
+  useEffect(() => {
+    if(inView5){
+      control5.start('visible')
+    }
+    if(!inView5){
+      control5.start('hidden')
+    }
+  }, [control5,inView5])
 
   return (
     <div id="portfolio" className="portfolio container my-5 p-3">
@@ -107,6 +118,16 @@ const Portfolio = () => {
               desc="Being Created with MERN Stack technologies..."
               size="large"
               under_dev={true}
+            />
+          </motion.div>
+          <motion.div variants={scaleCardVarients} animate={control5} ref={ref5} className="col-xl-3 col-lg-6">
+            <PorfolioCard
+              image="images/explorecars.png"
+              title_link="Explore Cars"
+              desc="Created with ReactJS and used ReduxJS for state management."
+              size="large"
+              under_dev={false}
+              to='https://explorecars.herokuapp.com/'
             />
           </motion.div>
       </div>

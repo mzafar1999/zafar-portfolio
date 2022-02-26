@@ -95,7 +95,7 @@ const Services = () => {
               icon="/images/front-end-icon.png"
               projects="4 Projects"
               title="Front End Development"
-              desc="I will develop your front-end using HTML,CSS and Javascript or ReactJS"
+              desc="I develope front using HTML,CSS and Javascript. Library that I use are ReactJS and styled-components."
             />
           </motion.div>
           <motion.div
@@ -107,7 +107,7 @@ const Services = () => {
               icon="/images/back-end-icon.png"
               projects="4 Projects"
               title="Backend Development"
-              desc="Node.js is the tech that I am using for backend and will create RESTFul Api."
+              desc="For backend development, I use Node.js and I have created many RESTFul Apis for my applications."
             />
           </motion.div>
           <motion.div
@@ -120,6 +120,7 @@ const Services = () => {
               projects="6 Projects"
               title="UI Designing"
               desc="I do graphic designing stuff using Adobe Photoshop, illustrator & Figma for web."
+              work='see my works'
             />
           </motion.div>
         </motion.div>

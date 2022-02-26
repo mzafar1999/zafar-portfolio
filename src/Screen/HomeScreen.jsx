@@ -15,7 +15,6 @@ const HomeScreen = () => {
             <Services />
             <Portfolio />
             <Contact />
-            <SocialMedia/>
         </div>
     )
 }

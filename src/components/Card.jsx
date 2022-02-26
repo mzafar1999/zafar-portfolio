@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/theme";
 import "./card.css";
-const Card = ({ icon, projects, title, desc }) => {
+const Card = ({ icon, projects, title, desc, work }) => {
   const context = useContext(ThemeContext);
-  const [{ theme, isDark }, toggleTheme] = context;
+  const [{ isDark }] = context;
  
   return (
     <motion.div
@@ -23,7 +24,7 @@ const Card = ({ icon, projects, title, desc }) => {
           <h3>{title}</h3>
         </div>
         <div className="w-75">
-          <p>{desc}</p>
+          <p>{desc} {work?<Link to="/graphic-designing-portfolio" style={{cursor:'pointer'}}>See my works</Link>:null}</p>
         </div>
       </div>
     </motion.div>

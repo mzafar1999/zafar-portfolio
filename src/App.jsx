@@ -5,6 +5,8 @@ import HomeScreen from "./Screen/HomeScreen";
 import Navbar from "./components/Navbar";
 import { ThemeContext } from "./context/theme";
 import { useContext } from "react";
+import SocialMedia from "./components/SocialMedia";
+import GraphicDesignPortfolioScreen from "./Screen/GraphicDesignPortfolioScreen";
 function App() {
   const context = useContext(ThemeContext);
   const [{theme}] = context;
@@ -15,11 +17,15 @@ function App() {
       }} >
         <Navbar>
         </Navbar>
-       
+      
        <Routes>
        <Route path='/' element={<HomeScreen/>} />
        </Routes>
-       {/* <Footer></Footer> */}
+       <Routes>
+       <Route path='/graphic-designing-portfolio' element={<GraphicDesignPortfolioScreen/>} />
+       </Routes>
+
+       <SocialMedia/>
       </div>
     </Router>
   );
