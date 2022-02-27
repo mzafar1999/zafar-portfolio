@@ -122,7 +122,7 @@ const Portfolio = () => {
           </motion.div>
           <motion.div variants={scaleCardVarients} animate={control5} ref={ref5} className="col-xl-3 col-lg-6">
             <PorfolioCard
-              image="images/explorecars.png"
+              image="images/ecars.png"
               title_link="Explore Cars"
               desc="Created with ReactJS and used ReduxJS for state management."
               size="large"
