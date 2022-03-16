@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import { FaBars } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 import menuItems from "./navbar.data";
 import "./navbar.css";
 import {MdDarkMode} from 'react-icons/md';
@@ -12,7 +11,6 @@ import {IoIosMenu} from 'react-icons/io';
 const Navbar = () => {
   const context = useContext(ThemeContext);
   const [{ theme, isDark }, toggleTheme] = context;
-
   const [isNavOpen, setIsNavOpen] = useState(false);
   const openNavHandler = () => {
     setIsNavOpen(!isNavOpen);
