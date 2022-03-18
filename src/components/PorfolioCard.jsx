@@ -7,7 +7,7 @@ const PorfolioCard = ({ image, title_link, desc,to,size,under_dev }) => {
     const [{ theme }] = context;
   return (
     <motion.div whileHover={{scale:1.07}}
-      className="large-card m-2 card-style"
+      className="large-card m-1 card-style"
       style={{
         backgroundColor: theme.backgroundColor,
         color: theme.color,
@@ -19,7 +19,7 @@ const PorfolioCard = ({ image, title_link, desc,to,size,under_dev }) => {
         <h5 className="card-title"> {title_link} </h5>
         <p className="card-text">{desc}</p>
         <a href={to} target='_blank' className={under_dev?'btn btn-info':'btn btn-primary'} role="button" >
-          {under_dev?'Under Development':'View Project'}
+          {under_dev?'Being Developed':'View Project'}
         </a>
       </div>
     </motion.div>

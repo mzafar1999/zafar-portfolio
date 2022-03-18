@@ -74,8 +74,8 @@ const Portfolio = () => {
   ];
 
   return (
-    <div id="portfolio" className="portfolio container my-5 p-3">
-      <div className="row">
+    <div id="portfolio" className="portfolio container my-5 p-lg-3">
+      <div className="row no-gutters">
         <h1 className="text-white">Portfolio</h1>
         {
           projectsData.map((project) => {
@@ -85,7 +85,7 @@ const Portfolio = () => {
               initial="hidden"
               animate={control1}
               ref={ref1}
-              className="col-xl-3 col-lg-6"
+              className="col-xl-3 col-lg-6 col-6 "
             >
               <PorfolioCard
               {...project}
