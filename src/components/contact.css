@@ -7,6 +7,11 @@
     text-align: start;
 }
 
+p{
+    padding: 0px;
+    margin: 0px !important;
+}
+
 .input-container input {
     border: 0;
     border-bottom: 1px solid #555;

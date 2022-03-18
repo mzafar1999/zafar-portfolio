@@ -21,6 +21,8 @@ const Header = () => {
           <Title3>Hello,</Title3>
           <Title1>I'M Zafar</Title1>
           <Title3>MERN Stack Developer</Title3>
+          <Title3>Asim Habib Team Member</Title3>
+
           <ButtonContainer>
             <motion.button
               variants={buttonVariants}

@@ -82,7 +82,7 @@ const Contact = () => {
                 <p>Hayatabad, Peshawar, Pakistan.</p>
               </div>
             </div>
-            <div className="d-flex my-2">
+            <div className="d-flex my-5">
               <div>
                 <FontAwesomeIcon
                   icon={faPhoneAlt}
@@ -95,7 +95,7 @@ const Contact = () => {
                 <p>(+92) 305-943-6671</p>
               </div>
             </div>
-            <div className="d-flex my-2">
+            <div className="d-flex my-5">
               <div>
                 <FontAwesomeIcon
                   icon={faEnvelope}
@@ -106,6 +106,7 @@ const Contact = () => {
               <div className="mx-4">
                 <h3>Email</h3>
                 <p>m.zafarhayatzada@gmail.com</p>
+                <p>de.asimhabib@gmail.com</p>
               </div>
             </div>
           </div>
