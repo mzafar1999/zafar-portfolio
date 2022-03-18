@@ -58,7 +58,7 @@ const Portfolio = () => {
       id:4,
       image:"images/e-app.png",
       title_link:"MERN E-Commerce App",
-      desc:"Being Created with MERN Stack technologies...",
+      desc:"Being Created with MERN Stack...",
       size:"large",
       under_dev:true,
       to:"https://zecommerce.netlify.app/",
