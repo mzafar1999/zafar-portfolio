@@ -95,7 +95,7 @@ const Services = () => {
               icon="/images/front-end-icon.png"
               projects="4 Projects"
               title="Front End Development"
-              desc="I develope front using HTML,CSS and Javascript. Library that I use are ReactJS and styled-components."
+              desc="I develop frontend using HTML,CSS,Bootstrap, Javascript and ReactJS."
             />
           </motion.div>
           <motion.div

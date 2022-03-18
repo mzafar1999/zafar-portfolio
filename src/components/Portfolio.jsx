@@ -95,64 +95,7 @@ const Portfolio = () => {
           })
         }
        
-        {/* <motion.div
-          variants={scaleCardVarients}
-          animate={control2}
-          ref={ref2}
-          className="col-xl-3 col-lg-6"
-        >
-          <PorfolioCard
-            image="images/to-do.png"
-            title_link="To Do App"
-            desc="Created with Javafx library and MySql database."
-            size="large"
-            to="https://www.youtube.com/watch?v=mznXBz6DFiU"
-          />
-        </motion.div>
-        <motion.div
-          variants={scaleCardVarients}
-          animate={control3}
-          ref={ref3}
-          className="col-xl-3 col-lg-6"
-        >
-          <PorfolioCard
-            image="images/ytd.png"
-            title_link="Youtube Downloader"
-            desc="Created with ReactJS and loader.to API."
-            size="large"
-            to="https://loaderto-youtube-downloader.herokuapp.com"
-          />
-        </motion.div>
-        <motion.div
-          variants={scaleCardVarients}
-          animate={control4}
-          ref={ref4}
-          className="col-xl-3 col-lg-6"
-        >
-          <PorfolioCard
-            image="images/e-app.png"
-            title_link="MERN E-Commerce App"
-            desc="Being Created with MERN Stack technologies..."
-            size="large"
-            under_dev={false}
-            to="https://zecommerce.netlify.app/"
-          />
-        </motion.div>
-        <motion.div
-          variants={scaleCardVarients}
-          animate={control5}
-          ref={ref5}
-          className="col-xl-3 col-lg-6"
-        >
-          <PorfolioCard
-            image="images/ecars.png"
-            title_link="Explore Cars"
-            desc="Created with ReactJS and used ReduxJS for state management."
-            size="large"
-            under_dev={false}
-            to="https://explorecars.herokuapp.com/"
-          />
-        </motion.div> */}
+      
       </div>
     </div>
   );

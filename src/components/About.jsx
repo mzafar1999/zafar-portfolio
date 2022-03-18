@@ -55,22 +55,27 @@ const About = () => {
           <div>
             <h2>Muhammad Zafar</h2>
           </div>
-          <div>
-          MERN Stack fresher.
-          </div>
+          <div>MERN Stack.</div>
           <div>
             <p>
-              Muhammad Zafar is
-              software engineering student with 1+ year experience in
-              programming. He has been learning MERN stack technologies and has developed some MERN stack applications. More than being web developer, he has good UI and graphic designing skills as he created logos, banner designs for business and commercial cards. <br/>
-              Skills:<br/>
-              </p>
-              <ul className="text-left-style align-list">
-                  <li>Front-end: HTML,CSS,Bootstrap and ReactJS</li>
-                  <li>Backend: Node.js, Express</li>
-                  <li>Database: Mysql, MongoDB</li>
-                  <li>Graphic Design: Adobe Photoshop, Adobe illustrator and Figma</li>
-              </ul>
+              ☆ 6th Semester student of Software
+              Engineering at IM|SCIENCES ☆
+              <br />
+              Skills:
+              <br />
+            </p>
+            <ul className="text-left-style align-list">
+              <li>
+                Front-end: HTML, CSS, Javascript, Bootstrap, ReactJS,
+                styled-components.
+              </li>
+              <li>Backend: Node.js, Express</li>
+              <li>Database: Mysql, MongoDB</li>
+              <li>Graphic Design: Adobe Photoshop, Adobe illustrator</li>
+              <li>
+                More: ...@Redux Toolkit, Formik, Framer Motion, CryptoJS, JWT
+              </li>
+            </ul>
           </div>
         </div>
       </motion.div>
