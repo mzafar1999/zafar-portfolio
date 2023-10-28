@@ -79,7 +79,7 @@ const Contact = () => {
               </div>
               <div className="mx-4">
                 <h3>Address</h3>
-                <p>Hayatabad, Peshawar, Pakistan.</p>
+                <p>4 Rue Theodore Monod, 15000 Aurillac, France</p>
               </div>
             </div>
             <div className="d-flex my-5">
@@ -92,7 +92,7 @@ const Contact = () => {
               </div>
               <div className="mx-4">
                 <h3>Phone</h3>
-                <p>(+92) 305-943-6671</p>
+                <p>(+33) 780 43 46 12</p>
               </div>
             </div>
             <div className="d-flex my-5">
@@ -106,7 +106,6 @@ const Contact = () => {
               <div className="mx-4">
                 <h3>Email</h3>
                 <p>m.zafarhayatzada@gmail.com</p>
-                <p>de.asimhabib@gmail.com</p>
               </div>
             </div>
           </div>

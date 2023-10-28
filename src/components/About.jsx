@@ -58,8 +58,7 @@ const About = () => {
           <div>MERN Stack.</div>
           <div>
             <p>
-              ☆ 6th Semester student of Software
-              Engineering at IM|SCIENCES ☆
+              ☆ Self-Learner MERN Stack Web Developer ☆
               <br />
               Skills:
               <br />
@@ -71,9 +70,9 @@ const About = () => {
               </li>
               <li>Backend: Node.js, Express</li>
               <li>Database: Mysql, MongoDB</li>
-              <li>Graphic Design: Adobe Photoshop, Adobe illustrator</li>
+              <li>Comfortable with Graphic Design Softwares: Adobe Photoshop, Adobe illustrator</li>
               <li>
-                More: ...@Redux Toolkit, Formik, Framer Motion, CryptoJS, JWT
+                More: Used libreries are: @Redux Toolkit, Formik, Framer Motion, CryptoJS, JWT
               </li>
             </ul>
           </div>
