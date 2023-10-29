@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 #View this live on:
-http://zafar-portfolio.herokuapp.com/
-
+https://zafarportfolio.netlify.app/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
