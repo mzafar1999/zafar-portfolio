@@ -38,7 +38,7 @@ const Portfolio = () => {
       image: "images/dell-clone-sc.png",
       title_link: "Dell Clone",
       desc: "Created only with CSS HTML and Javascript.",
-      to: "https://dellclone.000webhostapp.com/",
+      to: "https://dellclonezafar.000webhostapp.com/",
       size: "large",
     }, {
       id:2,

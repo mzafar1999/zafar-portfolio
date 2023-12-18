@@ -53,7 +53,7 @@ const About = () => {
         </div>
         <div className="about-description col-md-6 text-left-style">
           <div>
-            <h2>Muhammad Zafar</h2>
+            <h2>M.Zafar HAYAT ZADA</h2>
           </div>
           <div>MERN Stack.</div>
           <div>
@@ -73,6 +73,9 @@ const About = () => {
               <li>Comfortable with Graphic Design Softwares: Adobe Photoshop, Adobe illustrator</li>
               <li>
                 More: Used libreries are: @Redux Toolkit, Formik, Framer Motion, CryptoJS, JWT
+              </li>
+              <li>
+                Languages: Persian(Native), French (A1), English (B2)
               </li>
             </ul>
           </div>
