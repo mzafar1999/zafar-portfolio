@@ -69,7 +69,7 @@ const Portfolio = () => {
             desc:"Created with ReactJS and used ReduxJS for state management.",
             size:"large",
             under_dev:false,
-            to:"https://explorecars.herokuapp.com/"
+            to:"https://explorecars-webapp-by-zafar.netlify.app/"
     },
   ];
 
